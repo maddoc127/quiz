@@ -20,7 +20,11 @@ public class Depo {
     }
 
     public Oyuncak KutudanOyuncakCikar(Gene<Oyuncak> urun){
-        return ;
+         return urun.get();
+    }
+
+    public Giysi KutudanGiysiCikar(Gene<Giysi> urun){
+         return urun.get();
     }
 
 }
