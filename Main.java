@@ -18,6 +18,10 @@ public class Main {
         System.out.println(depo1.depoliste);
         System.out.println(kamyon1.kamyonliste);
 
+        depo2.kamyondanIndir(kamyon1);
+
+        System.out.println(depo2.depoliste);
+        System.out.println(kamyon1.kamyonliste);
         
     }
 }
