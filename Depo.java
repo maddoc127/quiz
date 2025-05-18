@@ -13,4 +13,14 @@ public class Depo {
     public void kamyonaYukle(Kamyon kamyon){
         kamyon.kamyonliste.add(depoliste.removeLast());
     }
+
+    public void kamyondanIndir(Kamyon kamyon){
+        depoliste.add(kamyon.kamyonliste.removeLast());
+        
+    }
+
+    public Oyuncak KutudanOyuncakCikar(Gene<Oyuncak> urun){
+        return ;
+    }
+
 }
