@@ -22,6 +22,21 @@ public class Main {
 
         System.out.println(depo2.depoliste);
         System.out.println(kamyon1.kamyonliste);
+
+        Oyuncak oyuncak2 = new Oyuncak();
+        Giysi giysi2 = new Giysi();
+        Gene<Oyuncak> kutu1 = new Gene<>(oyuncak2);
+        Gene<Giysi> kutu2 = new Gene<>(giysi2);
+
+        try{
+            Bavul bavul = new Bavul();
+            bavul.weight = 10;
+            depo1.limit = 5;
+            depo1.depoliste.add(depo1.bavulkutula(bavul));
+        }
+        catch(Exception e){         
+            System.out.println(e);
+        }
         
     }
 }
